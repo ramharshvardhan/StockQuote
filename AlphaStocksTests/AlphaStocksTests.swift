@@ -21,16 +21,28 @@ class AlphaStocksTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testStocksQuoteFetch() {
+        StocksQuote.fetchStocksQuote(company: "INTC") { (success, stocksContent) in
+            XCTAssertTrue(success)
+            XCTAssertTrue(stocksContent != nil)
         }
     }
     
+    func testCompaniesToFetch() {
+        let mainVC = ViewController()
+        XCTAssertTrue(mainVC.companies.count > 0)
+    }
+    
+    func testStocksQuoteResponse() {
+        NetworkEngine.getStocksQuote(company: "MSFT") { (success, response, data, error) in
+            XCTAssertTrue(success)
+            XCTAssertNil(error)
+            XCTAssertNotNil(response)
+            XCTAssertNotNil(data)
+            
+            if let response = response as? HTTPURLResponse {
+                XCTAssertEqual(response.statusCode, 200)
+            }
+        }
+    }
 }

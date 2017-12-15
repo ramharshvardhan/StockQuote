@@ -9,27 +9,46 @@
 import UIKit
 
 class StockDetailViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - IBOUTLETS
+    @IBOutlet fileprivate var companyName: UILabel!
+    @IBOutlet fileprivate var lowPrice: UILabel!
+    @IBOutlet fileprivate var highPrice: UILabel!
+    @IBOutlet fileprivate var openingPrice: UILabel!
+    @IBOutlet fileprivate var closingPrice: UILabel!
+    @IBOutlet fileprivate var volume: UILabel!
+    
+    //MARK: - PUBLIC PROPERTIES
+    public var stockContent: StocksContent? = nil
+    public var company = "COMPANY"
+    
+    //MARK: - INITIALIZERS
+    public convenience init(_ content: StocksContent) {
+        self.init()
+        self.stockContent = content
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //MARK: - LIFECYCLE
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupView()
+        configureView()
     }
-    */
-
+    
+    fileprivate func setupView() {
+        title = "STOCK DETAILS"
+        navigationController?.navigationBar.tintColor = UIColor.brown
+        companyName.text = company
+    }
+    
+    fileprivate func configureView() {
+        guard let content = stockContent else { return }
+        
+        lowPrice.text = "Low Price: \(content.lowPrice)"
+        highPrice.text = "High Price: \(content.highPrice)"
+        openingPrice.text = "Opening Price: \(content.openingPrice)"
+        closingPrice.text = "Closing Price: \(content.closingPrice)"
+        volume.text = "Volume: \(content.volume)"
+    }
 }
+

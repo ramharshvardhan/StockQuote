@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF2346901FE3907E003DAF0C /* MockData_MSFT.JSON in Resources */ = {isa = PBXBuildFile; fileRef = DF23468F1FE3907E003DAF0C /* MockData_MSFT.JSON */; };
 		DFCDD5971FE38963003AB4CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDD5961FE38963003AB4CC /* AppDelegate.swift */; };
 		DFCDD5991FE38963003AB4CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDD5981FE38963003AB4CC /* ViewController.swift */; };
 		DFCDD59C1FE38963003AB4CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCDD59A1FE38963003AB4CC /* Main.storyboard */; };
@@ -14,6 +15,14 @@
 		DFCDD5A11FE38963003AB4CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFCDD59F1FE38963003AB4CC /* LaunchScreen.storyboard */; };
 		DFCDD5AC1FE38964003AB4CC /* AlphaStocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDD5AB1FE38964003AB4CC /* AlphaStocksTests.swift */; };
 		DFCDD5B71FE38964003AB4CC /* AlphaStocksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDD5B61FE38964003AB4CC /* AlphaStocksUITests.swift */; };
+		DFCDD5C51FE38A15003AB4CC /* StocksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDD5C41FE38A15003AB4CC /* StocksCell.swift */; };
+		DFCDD5C71FE38A4D003AB4CC /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDD5C61FE38A4D003AB4CC /* StockDetailViewController.swift */; };
+		DFCDD5C91FE38A66003AB4CC /* StocksContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDD5C81FE38A66003AB4CC /* StocksContent.swift */; };
+		DFCDD5CB1FE38A83003AB4CC /* StocksQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDD5CA1FE38A83003AB4CC /* StocksQuote.swift */; };
+		DFCDD5CE1FE38A9F003AB4CC /* DataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDD5CD1FE38A9F003AB4CC /* DataResponse.swift */; };
+		DFCDD5D01FE38AB6003AB4CC /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDD5CF1FE38AB6003AB4CC /* NetworkEngine.swift */; };
+		DFCDD5D61FE38BB0003AB4CC /* DataResponseStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDD5D51FE38BAF003AB4CC /* DataResponseStub.swift */; };
+		DFCDD5D81FE38BBE003AB4CC /* NetworkEngineMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFCDD5D71FE38BBE003AB4CC /* NetworkEngineMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF23468F1FE3907E003DAF0C /* MockData_MSFT.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MockData_MSFT.JSON; path = ../../../../MockData_MSFT.JSON; sourceTree = "<group>"; };
 		DFCDD5931FE38963003AB4CC /* AlphaStocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphaStocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCDD5961FE38963003AB4CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFCDD5981FE38963003AB4CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,14 @@
 		DFCDD5B21FE38964003AB4CC /* AlphaStocksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlphaStocksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFCDD5B61FE38964003AB4CC /* AlphaStocksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphaStocksUITests.swift; sourceTree = "<group>"; };
 		DFCDD5B81FE38964003AB4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFCDD5C41FE38A15003AB4CC /* StocksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksCell.swift; sourceTree = "<group>"; };
+		DFCDD5C61FE38A4D003AB4CC /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
+		DFCDD5C81FE38A66003AB4CC /* StocksContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksContent.swift; sourceTree = "<group>"; };
+		DFCDD5CA1FE38A83003AB4CC /* StocksQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksQuote.swift; sourceTree = "<group>"; };
+		DFCDD5CD1FE38A9F003AB4CC /* DataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponse.swift; sourceTree = "<group>"; };
+		DFCDD5CF1FE38AB6003AB4CC /* NetworkEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
+		DFCDD5D51FE38BAF003AB4CC /* DataResponseStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponseStub.swift; sourceTree = "<group>"; };
+		DFCDD5D71FE38BBE003AB4CC /* NetworkEngineMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEngineMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +115,17 @@
 		DFCDD5951FE38963003AB4CC /* AlphaStocks */ = {
 			isa = PBXGroup;
 			children = (
+				DFCDD5D21FE38B7A003AB4CC /* Mocks */,
+				DFCDD5D11FE38B5D003AB4CC /* Utility */,
+				DFCDD5CC1FE38A93003AB4CC /* Networking */,
 				DFCDD5961FE38963003AB4CC /* AppDelegate.swift */,
 				DFCDD5981FE38963003AB4CC /* ViewController.swift */,
 				DFCDD59A1FE38963003AB4CC /* Main.storyboard */,
 				DFCDD59D1FE38963003AB4CC /* Assets.xcassets */,
 				DFCDD59F1FE38963003AB4CC /* LaunchScreen.storyboard */,
 				DFCDD5A21FE38963003AB4CC /* Info.plist */,
+				DFCDD5C41FE38A15003AB4CC /* StocksCell.swift */,
+				DFCDD5C61FE38A4D003AB4CC /* StockDetailViewController.swift */,
 			);
 			path = AlphaStocks;
 			sourceTree = "<group>";
@@ -123,6 +146,50 @@
 				DFCDD5B81FE38964003AB4CC /* Info.plist */,
 			);
 			path = AlphaStocksUITests;
+			sourceTree = "<group>";
+		};
+		DFCDD5CC1FE38A93003AB4CC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DFCDD5CD1FE38A9F003AB4CC /* DataResponse.swift */,
+				DFCDD5CF1FE38AB6003AB4CC /* NetworkEngine.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DFCDD5D11FE38B5D003AB4CC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				DFCDD5C81FE38A66003AB4CC /* StocksContent.swift */,
+				DFCDD5CA1FE38A83003AB4CC /* StocksQuote.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		DFCDD5D21FE38B7A003AB4CC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DFCDD5D41FE38B9D003AB4CC /* Responses */,
+				DFCDD5D31FE38B85003AB4CC /* JSONs */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		DFCDD5D31FE38B85003AB4CC /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				DF23468F1FE3907E003DAF0C /* MockData_MSFT.JSON */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
+		DFCDD5D41FE38B9D003AB4CC /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				DFCDD5D51FE38BAF003AB4CC /* DataResponseStub.swift */,
+				DFCDD5D71FE38BBE003AB4CC /* NetworkEngineMock.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +302,7 @@
 				DFCDD5A11FE38963003AB4CC /* LaunchScreen.storyboard in Resources */,
 				DFCDD59E1FE38963003AB4CC /* Assets.xcassets in Resources */,
 				DFCDD59C1FE38963003AB4CC /* Main.storyboard in Resources */,
+				DF2346901FE3907E003DAF0C /* MockData_MSFT.JSON in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +327,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFCDD5C71FE38A4D003AB4CC /* StockDetailViewController.swift in Sources */,
+				DFCDD5D61FE38BB0003AB4CC /* DataResponseStub.swift in Sources */,
+				DFCDD5CB1FE38A83003AB4CC /* StocksQuote.swift in Sources */,
+				DFCDD5C51FE38A15003AB4CC /* StocksCell.swift in Sources */,
+				DFCDD5CE1FE38A9F003AB4CC /* DataResponse.swift in Sources */,
+				DFCDD5C91FE38A66003AB4CC /* StocksContent.swift in Sources */,
+				DFCDD5D81FE38BBE003AB4CC /* NetworkEngineMock.swift in Sources */,
 				DFCDD5991FE38963003AB4CC /* ViewController.swift in Sources */,
+				DFCDD5D01FE38AB6003AB4CC /* NetworkEngine.swift in Sources */,
 				DFCDD5971FE38963003AB4CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
